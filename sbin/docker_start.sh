@@ -13,7 +13,8 @@ sudo sysctl -w vm.max_map_count=262144
 export BUILD="" # '--build'
 export WORKSPACE_INSTALL_KRB5=false
 
-declare -a arr=("apache2" \
+declare -a arr=("blackfire" \
+"apache2" \
 "docker-registry" "docker-web-ui" \
 "dejavu" "kibana" "manifoldcf" \
 "memcached" "redis-webui" \
@@ -41,5 +42,5 @@ declare -a arr=("apache2" \
 for i in "${arr[@]}"
 do
     export CONTAINER="$i"
-    docker-compose up ${BUILD} -d ${CONTAINER}
+    docker-compose up -d ${BUILD} ${CONTAINER}
 done
