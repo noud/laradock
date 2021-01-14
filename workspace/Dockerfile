@@ -306,6 +306,21 @@ RUN if [ ${INSTALL_XSL} = true ]; then \
 
 
 ###########################################################################
+# Kerberos:
+###########################################################################
+
+ARG INSTALL_KRB5=false
+
+RUN if [ ${INSTALL_KRB5} = true ]; then \
+    apt-get update -yqq && \
+    apt-get install -y libkrb5-dev && \
+    apt-get install -y php-pear && \
+    apt-get install -y php${LARADOCK_PHP_VERSION}-dev && \
+    pecl install krb5 && \
+    echo "extension=krb5.so" > /etc/php/${LARADOCK_PHP_VERSION}/cli/php.ini \
+;fi
+
+###########################################################################
 # LDAP:
 ###########################################################################
 
