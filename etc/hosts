@@ -1,8 +1,13 @@
+127.0.1.1	HP-ProDesk-600-G2-DM-ns1
 127.0.1.1	HP-ProDesk-600-G2-DM
+127.0.0.1       ns1
 127.0.0.1	dev.localhost
 127.0.0.1	laravel.localhost
 127.0.0.1	api-platform-demo.localhost
 127.0.0.1	dreamfactory.localhost
+127.0.0.1	mercure mercure.localhost
+127.0.0.1	demo.mercure.localhost
+#127.0.0.1	ip6-localhost
 # Person
 127.0.0.1	bo.localhost
 127.0.0.1	hieutube.localhost
@@ -14,7 +19,7 @@
 # react
 127.0.0.1	react-admin-data-graphql-simple.localhost
 127.0.0.1	tic-tac-toe-react.localhost
-# rest
+# grapgql_rest
 127.0.0.1	gripp.localhost
 127.0.0.1	api.gripp.localhost
 127.0.0.1	app.gripp.localhost
@@ -27,18 +32,15 @@
 127.0.0.1	laravel-images.localhost
 127.0.0.1	lighthouse-tutorial.localhost
 127.0.0.1	links.localhost
-127.0.0.1	moodle.localhost
-127.0.0.1	phpbb.localhost
 127.0.0.1	saas.localhost
 127.0.0.1	seo.localhost
 127.0.0.1	symfony3heroku.localhost
+# SSO
+127.0.0.1	moodle.localhost
+127.0.0.1	phpbb.localhost
 
 127.0.0.1	simplesaml.localhost
 127.0.0.1	slothtrader.localhost
-
-127.0.0.1	hallolex.localhost
-127.0.0.1	minute.localhost
-127.0.0.1	personalprotein.localhost
 
 127.0.0.1	ats.localhost
 127.0.0.1	crawler.localhost
@@ -48,6 +50,6 @@
 127.0.0.1	billing.localhost
 
 127.0.0.1	politie.localhost
+92.65.241.227   politie.secure-code.eu
 127.0.0.1	pimcore-demo.localhost
 127.0.0.1	symfony.localhost
-127.0.0.1	databryde.test databryde.localhost
