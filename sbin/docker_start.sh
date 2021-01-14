@@ -41,6 +41,7 @@ declare -a arr=("blackfire" \
 
 # above fails for
 # "mongo-webui" # It looks like you are trying to access MongoDB over HTTP on the native driver port.
+# "react"
 
 for i in "${arr[@]}"
 do
