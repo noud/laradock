@@ -14,7 +14,6 @@ sudo sysctl -w vm.max_map_count=262144
 # sudo chmod -R a+rwx ~/.laradock/data/pgadmin
 
 export BUILD="" # '--build'
-export WORKSPACE_INSTALL_KRB5=false
 
 declare -a arr=("blackfire" \
 "apache2" \
