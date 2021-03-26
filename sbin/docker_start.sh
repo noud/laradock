@@ -2,6 +2,7 @@
 
 sudo systemctl stop apache2
 sudo systemctl stop mongodb
+sudo systemctl stop postgresql
 
 # Docker
 sudo usermod -aG docker $USER
@@ -13,17 +14,19 @@ sudo sysctl -w vm.max_map_count=262144
 # "pgadmin" # PermissionError: [Errno 1] Operation not permitted: '/var/lib/pgadmin/sessions'
 # sudo chmod -R a+rwx ~/.laradock/data/pgadmin
 
-export BUILD="" # '--build'
+export BUILD='' # '--build'
 
-declare -a arr=("blackfire" \
+declare -a arr=( \
+# "blackfire" \
 "apache2" \
-"docker-registry" "docker-web-ui" \
-"dejavu" "kibana" "manifoldcf" \
-"memcached" "redis-webui" \
-"mongo" \
+# "docker-registry" "docker-web-ui" \
+# "dejavu" "kibana" "manifoldcf" \
+# "memcached" \
+"redis-webui" \
+# "mongo" \
 "phpmyadmin" \
 "pgadmin" "postgres" \
-"beanstalkd-console" "rabbitmq" "sqs" \
+# "beanstalkd-console" "rabbitmq" "sqs" \
 "mailhog"
 )
 
