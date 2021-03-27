@@ -17,16 +17,16 @@ sudo sysctl -w vm.max_map_count=262144
 export BUILD='' # '--build'
 
 declare -a arr=( \
-# "blackfire" \
+"blackfire" \
 "apache2" \
-# "docker-registry" "docker-web-ui" \
-# "dejavu" "kibana" "manifoldcf" \
-# "memcached" \
+"docker-registry" "docker-web-ui" \
+"dejavu" "kibana" "manifoldcf" \
+"memcached" \
 "redis-webui" \
-# "mongo" \
+"mongo" \
 "phpmyadmin" \
 "pgadmin" "postgres" \
-# "beanstalkd-console" "rabbitmq" "sqs" \
+"beanstalkd-console" "rabbitmq" "sqs" \
 "mailhog"
 )
 
