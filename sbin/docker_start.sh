@@ -11,8 +11,8 @@ sudo systemctl restart docker
 # memmory for elasticsearch
 sudo sysctl -w vm.max_map_count=262144
 
-# "pgadmin" # PermissionError: [Errno 1] Operation not permitted: '/var/lib/pgadmin/sessions'
-# sudo chmod -R a+rwx ~/.laradock/data/pgadmin
+# correct rights for pgadmin
+sudo chown -R 5050:5050 ~/.laradock/data/pgadmin
 
 export BUILD='' # '--build'
 
