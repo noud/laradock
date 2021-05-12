@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 sudo systemctl stop apache2
+sudo systemctl stop apache2.service
 sudo systemctl stop mongodb
 sudo systemctl stop postgresql
 
